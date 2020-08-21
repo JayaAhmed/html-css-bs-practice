@@ -1,0 +1,23 @@
+.box1{
+    background-color: mediumpurple;
+    width: 500px;
+    height: 450px;
+}
+
+.box2{
+    background-color: mediumseagreen;
+    width: 300px;
+    height: 250px;
+}
+
+.box3{
+    background-color: gray;
+    width: 450px;
+    height: 150px;
+}
+
+.box4{
+    background-color: pink;
+    width: 100px;
+    height: 70px;
+}
