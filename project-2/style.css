@@ -1,3 +1,10 @@
+body {
+    background-image: linear-gradient(#e0934b, #c550bd, #3f53b6);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+}
+
 .container {
     width: 1024px;
     min-height: 300px;
@@ -6,8 +13,12 @@
 }
 
 header {
-    background-color: rgb(16, 88, 16);
-    min-height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 }
 
 main {
@@ -17,28 +28,41 @@ main {
 }
 
 .cards {
-    background-color: rgb(32, 145, 32);
-    min-height: 300px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .card1 {
-    background-color: rgb(156, 56, 151);
-    min-height: 300px;
+    background-image: url(images/card1.jpg);
+    background-size: cover;
+    background-position: right;
+    min-height: 250px;
     width: 30%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.493);
 }
 
 .card2 {
-    background-color: rgb(206, 50, 185);
-    min-height: 300px;
+    background-image: url(images/card2.jpg);
+    background-size: cover;
+    background-position: left;
+    min-height: 250px;
     width: 30%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.493);
 }
 
 .card3 {
-    background-color: rgb(136, 30, 104);
-    min-height: 300px;
+    background-image: url(images/card3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
     width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card1, .card2, .card3 {
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
 }
 
 .boxL {
@@ -47,4 +71,88 @@ main {
 
 .boxR {
     flex: 1;
+}
+
+nav {
+    text-align: right;
+    
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.493);;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.cards p {
+    font-size: .85rem;
+    line-height: 1.2rem;
+    margin-top: 10px;
+}
+
+i {
+    font-size: 100px;
+    padding-top: 30px;
+}
+
+.cards a {
+    color: white;
+    text-decoration: none;
+}
+
+.mybutton {
+    background-color: white;
+    text-decoration: none;
+    color: #C850C0;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    font-weight: 1000;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.493);
+}
+
+.mybutton:hover {
+     background-color: rgb(90, 138, 35);
+}
+
+.navbutton {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: 1px solid white;
+    font-family: 'Playfair Display', serif;
+}
+
+.borobox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.chotobox {
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 47%;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.borobox p:last-of-type {
+    font-size: .8rem;
+    padding-left: 30px;
 }
