@@ -1,2 +1,2 @@
 # html-css-bs-practice
-habi jabi
+practice and projects on html, css, bootstrap, javascript

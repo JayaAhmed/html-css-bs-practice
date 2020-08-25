@@ -1,5 +1,8 @@
-body {
+html {
     background-image: linear-gradient(#e0934b, #c550bd, #3f53b6);
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -25,6 +28,11 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
 }
 
 .cards {
@@ -129,13 +137,20 @@ i {
 }
 
 .navbutton {
-    text-decoration: none;
-    color: white;
     padding: 8px 10px;
     margin-left: 10px;
     border: 1px solid white;
     font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
 }
+
+.navbutton a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .borobox {
     display: flex;
@@ -155,4 +170,55 @@ i {
 .borobox p:last-of-type {
     font-size: .8rem;
     padding-left: 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.navbutton:hover .dropdown {
+    display: block;   
+}
+
+.dropdown .navbutton {
+    width: 100px;
+    margin-left: -5px;
+    background-color: lightslategray;
+    margin-bottom: 10px;
+}
+
+.dropdown .navbutton:hover {
+    background-color: rgb(108, 202, 108);
+}
+
+.inputwrapper {
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.newlinelabel {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margin-right-a {
+    margin-right: 20px;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+form {
+    margin: 40px 0px;
 }

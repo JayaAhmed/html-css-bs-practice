@@ -1,0 +1,31 @@
+.navbutton {
+    background-color: lightblue;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton{
+    background-color: lightgreen;
+}
+
+.dropdown .navbutton:hover {
+    background-color: lightsalmon;
+    transition-duration: 1s;
+}
+
+
